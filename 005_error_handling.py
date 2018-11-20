@@ -2,7 +2,6 @@ from twisted.web.server import Site
 from twisted.web.resource import Resource
 from twisted.internet import reactor, endpoints
 from twisted.web.resource import NoResource
-
 from calendar import calendar
 
 class YearPage(Resource):
