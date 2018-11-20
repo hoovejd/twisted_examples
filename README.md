@@ -7,3 +7,9 @@ These examples are from the Twisted Web in 60 Seconds samples: https://twistedma
 
 ### 002
 To test this navigate to **http://localhost:8880**
+
+### 003
+To test this navigate to **http://localhost:8880/temp1**
+
+### 004
+I couldn't get the encoding to work right for this one. To test use **http://localhost:8880/2012**
