@@ -8,8 +8,13 @@ class DelayedResource(Resource):
         request.write(b"<html><body>Sorry to keep you waiting.</body></html>")
         request.finish()
 
+    def _responseFailed(self, err, call):
+        print("The request was cancelled!")
+        call.cancel()
+
     def render_GET(self, request):
-        reactor.callLater(5, self._delayedRender, request)
+        call = reactor.callLater(5, self._delayedRender, request)
+        request.notifyFinish().addErrback(self._responseFailed, call) #this will let us know if the request finished or was cancelled
         return NOT_DONE_YET
 
 root = Resource()
