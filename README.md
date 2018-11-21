@@ -12,6 +12,8 @@ To test this navigate to http://localhost:8880
 
 ### Tutorial 003
 To test this navigate to http://localhost:8880/temp1
+To test this navigate to http://localhost:8880/temp2
+To test this navigate to http://localhost:8880/temp3
 
 ### Tutorial 004
 I couldn't get the encoding to work right for this one. To test use http://localhost:8880/2012
@@ -41,3 +43,9 @@ Same as 010 just uses a deferred instead
 
 ### Tutorial 012
 Go to http://localhost:8880/test and close the browser tab, it should print that the request was cancelled
+
+### Tutorial 013
+Go to http://localhost:8880/test and close the browser tab, this will log that the request was cancelled
+
+### Tutorial 014
+Go to http://localhost:8880. Everything will be logged to /logs/access-logging-demo.log
