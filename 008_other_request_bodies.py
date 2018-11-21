@@ -10,11 +10,12 @@ class FormPage(Resource):
                 b"<form method='POST'><input name='the-field'></form>")
 
     def render_POST(self, request):
-        args = request.args[b"the-field"][0].decode("utf-8")
-        escapedArgs = html.escape(args)
+        content = request.content.read().decode("utf-8")
+        escapedContent = html.escape(content)
         return (b"<!DOCTYPE html><html><head><meta charset='utf-8'>"
                 b"<title></title></head><body>"
-                b"You submitted: " + escapedArgs.encode('utf-8'))
+                b"You submitted: " +
+                escapedContent.encode("utf-8"))
 
 root = Resource()
 root.putChild(b"form", FormPage())
