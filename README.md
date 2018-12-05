@@ -52,3 +52,11 @@ Go to http://localhost:8880. Everything will be logged to /logs/access-logging-d
 
 ### Tutorial 015
 Go to http://localhost:8880
+
+### Tutorial 016
+I couldn't get this to work, not sure why
+
+### Tutorial 017
+Go to http://localhost:8880/show to display your session ID. You can also click the "i" in the browser address bar, then click Cookies, you should see the TWISTED_SESSION cookie.
+You can open this page many times and the session ID should stay the same.
+Go to http://localhost:8880/expire to expire the cookie. Now next time you go to show page you will get a new session ID.
