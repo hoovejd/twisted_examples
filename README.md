@@ -63,3 +63,6 @@ Go to http://localhost:8880/expire to expire the cookie. Now next time you go to
 
 ### Tutorial 018
 Go to http://localhost:8880/ The counter should keep incrementing.
+
+### Tutorial 019
+This is the same as 016, though this one will serve the different temp dirs based on the user that logs in. Either temp1:temp1, temp2:temp2, or temp3:temp3
