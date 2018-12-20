@@ -54,7 +54,7 @@ Go to http://localhost:8880. Everything will be logged to /logs/access-logging-d
 Go to http://localhost:8880
 
 ### Tutorial 016
-I couldn't get this to work, not sure why
+Note, I was only able to get this to work using Python 2.7. Go to http://localhost:8880, log in with username and password. The temp1 directory should be shared
 
 ### Tutorial 017
 Go to http://localhost:8880/show to display your session ID. You can also click the "i" in the browser address bar, then click Cookies, you should see the TWISTED_SESSION cookie.
